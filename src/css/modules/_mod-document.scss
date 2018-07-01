@@ -1,0 +1,28 @@
+//mod-document
+.mod-document {
+    display: inline-block;
+    margin-bottom: 30px;
+    .icon {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        vertical-align: top;
+        &.icon-identity {
+            background: url(../img/product/icon-identity.svg) no-repeat 0 0 transparent;
+        }
+        &.icon-address {
+            background: url(../img/product/icon-address.svg) no-repeat 0 0 transparent;
+        }
+        &.icon-signature {
+            background: url(../img/product/icon-signature.svg) no-repeat 0 0 transparent;
+        }
+        &.icon-salaried {
+            background: url(../img/product/icon-salaried.svg) no-repeat 0 0 transparent;
+        }
+    }
+    .desc {
+        display: inline-block;
+        width: 700px;
+        vertical-align: top;
+    }
+}

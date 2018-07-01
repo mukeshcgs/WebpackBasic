@@ -1,0 +1,94 @@
+    //lyt-contact
+    .lyt-contact {
+        .tabs {
+            border-bottom: 1px solid #dddddd;
+            margin-bottom: 10px;
+            .nav-tabs {
+                margin-bottom: 20px;
+                margin-left: -10px;
+                li {
+                    a {
+                        padding: 15px 11px 6px;
+                    }
+                    &:first-child {}
+                } // &:after {
+                //     position: absolute;
+                //     content: "";
+                //     bottom: -4px;
+                //     left: -95px;
+                //     right: -104px;
+                //     width: auto;
+                //     height: 1px;
+                //     background: rgba(0, 0, 0, 0.3);
+                //     display: block;
+                // }
+            }
+        }
+        .tab-content {
+            padding: 50px 0px;
+            display: block;
+            overflow: hidden;
+        }
+        .mod-social-media {
+            text-align: center;
+            padding: 0px 0px 7px;
+            .text {
+                font-size: 12px;
+                line-height: 14px;
+                margin-right: 10px;
+                display: inline-block;
+                overflow: hidden;
+                vertical-align: top;
+                padding-top: 8px;
+            }
+            .item {
+                background: #666769;
+                width: 30px;
+                height: 30px;
+                .cm-icon {
+                    font-size: 13px;
+                }
+            }
+        }
+        .bs-card {
+            float: right;
+            margin-right: 10px;
+            .form-group {
+                padding-left: 0px;
+                .form-label {
+                    left: 0px;
+                }
+                &.text {
+                    // border: 1px solid #eeeeee;
+                    // font-size: 13px;
+                    // color: #eeeeee;
+                    // padding-top: 5px;
+                    textarea {
+                        border: none;
+                        color: #eeeeee;
+                        border: 1px solid #eeeeee;
+                        font-size: 13px;
+                        color: $clr-base;
+                        font-weight: $font-normal;
+                        padding-top: 5px;
+                        margin-top: 10px;
+                        @include input-placeholder(#c3c3c3);
+                    }
+                }
+            }
+        }
+        &.typ-search {
+            .tabs {
+                border: none;
+                .nav-tabs {
+                    li {
+                        margin-right: 80px;
+                        a {
+                            margin: 0px;
+                            padding: 15px 11px 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }

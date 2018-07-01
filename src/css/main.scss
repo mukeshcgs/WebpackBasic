@@ -1,0 +1,108 @@
+/*
+  @Author : Mukesh
+  @Project : Project Name
+  @Dev : Mukesh
+  @Date :6th Jan 18;
+*/ 
+
+
+/* config */
+
+@import "config/variables";
+@import "config/mixin";
+
+/* element */
+
+@import "element/reset";
+@import "element/elements";
+@import "common/common";
+
+/* bootstrap-extend */
+
+ @import "bootstrap-extend/btn";
+ @import "bootstrap-extend/tab";
+ @import "bootstrap-extend/form";
+ @import "bootstrap-extend/modal";
+ @import "bootstrap-extend/range";
+
+/* lib-extend */
+
+ @import "lib-extend/swiper";
+ @import "lib-extend/map";
+ @import "lib-extend/select2";
+ @import "lib-extend/autocomplete";
+ @import "lib-extend/rangeSlider";
+
+/* base */
+
+//@import "base/bs-header";
+// @import "base/bs-footer";
+// @import "base/bs-sec";
+// @import "base/bs-banner";
+// @import "base/bs-slider";
+// @import "base/bs-scroll-anim";
+// @import "base/bs-card";
+// @import "base/bs-icon-text";
+// @import "base/bs-com-info";
+// @import "base/bs-team";
+// @import "base/bs-content";
+// @import "base/bs-socialmedia-card";
+// @import "base/bs-blog";
+// @import "base/bs-autocomplete-search";
+// @import "base/bs-select";
+// @import "base/bs-resource";
+// @import "base/bs-blog-detail";
+// @import "base/bs-journey";
+// @import "base/bs-policy";
+// @import "base/bs-title-desc";
+// @import "base/bs-opening";
+// @import "base/bs-subtitle-desc";
+// @import "base/bs-flyout";
+// @import "base/bs-popup";
+// @import "base/bs-search";
+
+/* modules */
+
+// @import "modules/mod-social-media";
+// @import "modules/mod-review";
+// @import "modules/mod-desk-info";
+// @import "modules/mod-award";
+// @import "modules/mod-queries";
+// @import "modules/mod-filter";
+// @import "modules/mod-pagination";
+// @import "modules/mod-banner";
+// @import "modules/mod-icon-text";
+// @import "modules/mod-img-info";
+// @import "modules/mod-profile";
+// @import "modules/mod-icon-desc";
+// @import "modules/mod-culture";
+// @import "modules/mod-alumini";
+// @import "modules/mod-title-desc";
+// @import "modules/mod-floating";
+// @import "modules/mod-document";
+// @import "modules/mod-search";
+
+/* layout */
+
+// @import "layout/lyt-list";
+// @import "layout/lyt-review";
+// @import "layout/lyt-desk-info";
+// @import "layout/lyt-award";
+// @import "layout/lyt-socialmedia-card";
+// @import "layout/lyt-queries";
+// @import "layout/lyt-blog";
+// @import "layout/lyt-presskit";
+// @import "layout/lyt-contact";
+// @import "layout/lyt-contact-type";
+// @import "layout/lyt-calculator";
+// @import "layout/lyt-profile";
+// @import "layout/lyt-culture";
+// @import "layout/lyt-join-team";
+// @import "layout/lyt-alumini";
+// @import "layout/lyt-product";
+// @import "layout/lyt-swiper-card";
+// @import "layout/lyt-faq";
+
+/* plugin-override */
+
+//@import "plugin-override/select2";

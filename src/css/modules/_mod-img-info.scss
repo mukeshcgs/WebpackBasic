@@ -1,0 +1,43 @@
+//mod-img-info
+.mod-img-info {
+    position: relative;
+    .img-wrap {
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .property-info {
+        position: absolute;
+        left: 20px;
+        bottom: 30px;
+        color: $clr-root;
+        font-weight: $font-light;
+        text-align: left;
+        .price {
+            font-size: 22px;
+            line-height: 24px;
+            margin-bottom: 10px;
+            .area {
+                padding-right: 20px;
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 3px;
+                    right: 5px;
+                    width: 1px;
+                    height: 20px;
+                    background: #ffffff;
+                }
+            }
+            .bold {
+                font-weight: $font-bold;
+            }
+        }
+        .place {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}

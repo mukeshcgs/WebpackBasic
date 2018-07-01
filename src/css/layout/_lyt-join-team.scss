@@ -1,0 +1,27 @@
+.lyt-join-team {
+    .list-item {
+        width: 33.33%;
+        padding: 0 20px;
+        float: left;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .lyt-join-team {
+        padding: 0;
+        .mod-join-team {
+            padding: 0;
+            height: 220px;
+            .cloud9-item {
+                width: 70%;
+                height: 200px;
+                padding: 0;
+                float: none;
+            } // .list-item {
+            //     width: auto;
+            //     float: none;
+            //     padding: 0 10px;
+            // }
+        }
+    }
+}

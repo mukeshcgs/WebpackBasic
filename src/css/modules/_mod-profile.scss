@@ -1,0 +1,24 @@
+.mod-profile {
+    .img-wrap {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .profile-info {
+        font-size: 18px;
+        line-height: 26px;
+        color: $clr-base;
+        padding: 34px 60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mod-profile {
+        .profile-info {
+            font-size: 12px;
+            line-height: 17px;
+            padding: 10px;
+        }
+    }
+}

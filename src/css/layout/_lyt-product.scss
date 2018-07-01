@@ -1,0 +1,117 @@
+//lyt-product
+.lyt-product {
+    .title {
+        font-size: 30px;
+        line-height: 32px;
+        font-weight: $font-medium;
+        color: $clr-default;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .tag-line {
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        color: $clr-base-sec;
+        margin-bottom: 5px;
+        display: block;
+    }
+    .mod-title-desc {
+        text-align: center;
+        .title {
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+    }
+    .mod-document {
+        .title {
+            display: inline-block;
+            margin-left: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            color: $clr-base;
+        }
+        .icon-title {
+            width: 250px;
+            display: inline-block;
+        }
+    }
+    .bs-banner {
+        &.typ-center {
+            .banner-info {
+                top: 40%;
+                .banner-title {
+                    font-size: 30px;
+                    line-height: 32px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .banner-info {
+            .cm-icon-bg {
+                width: 80px;
+                height: 86px;
+                border: 0px;
+                left: 70px;
+                top: 26px;
+                &.icon-sanction {
+                    background: url("../img/product/icon-sanction.svg") no-repeat 0 0 transparent;
+                }
+                &.icon-principle {
+                    background: url("../img/product/icon-principle.svg") no-repeat 0 0 transparent;
+                    left: 100px;
+                }
+                &.icon-existing {
+                    background: url("../img/product/icon-existing.svg") no-repeat 0 0 transparent;
+                    left: 57px;
+                }
+                &.icon-finance {
+                    background: url(../img/product/icon-finance.svg) no-repeat 0 8px transparent;
+                    left: 40px;
+                    top: 22px;
+                }
+            }
+        }
+    }
+    .banner-link {
+        .lyt-list {
+            .item {
+                text-align: center;
+                &.active {
+                    &:after {
+                        content: '';
+                        width: 90px;
+                        height: 2px;
+                        position: absolute;
+                        bottom: -8px;
+                        right: 0;
+                        left: 0;
+                        margin: 0px auto;
+                        background: #ee2b33;
+                    }
+                }
+            }
+            .bs-icon-text {
+                transform: scale(0.9);
+                &:hover {
+                    transform: scale(1);
+                }
+                &:before {
+                    width: 120px;
+                    height: 120px;
+                    background: #ffffff;
+                    border: 0px;
+                    overflow: hidden;
+                    margin: 0px auto;
+                }
+                .text {
+                    color: #ffffff;
+                    line-height: 20px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

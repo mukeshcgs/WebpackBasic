@@ -1,0 +1,306 @@
+//lyt-contact-type
+.lyt-contact-type {
+    .detail {
+        width: 50%;
+        float: left;
+    }
+    .title {
+        font-size: 30px;
+        line-height: 32px;
+        margin-bottom: 10px;
+        color: $clr-default;
+        font-weight: $font-medium;
+        text-transform: uppercase;
+    }
+    .desc {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 50px;
+    }
+    .contact-wrap {
+        display: inline-block;
+        .icon-desc {
+            display: block;
+            overflow: hidden;
+            margin-bottom: 15px;
+            &.bottom-margin{
+                margin-bottom: 40px;
+            }
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin-top: 2px;
+            &.icon-cal{
+                background: url('../img/icon/con-call.png') no-repeat;
+            }
+            &.icon-email{
+                width: 36px;
+                height: 22px;
+                background: url('../img/icon/mail.png') no-repeat;
+            }
+            &.icon-msg{
+                background: url('../img/icon/msg.png') no-repeat;
+            }
+            // background: #000000;
+        }
+        .detail-wrap {
+            padding-left: 55px;
+            .contact-no {
+                font-size: 24px;
+                line-height: 28px;
+                color: $clr-base;
+                margin-bottom: 10px;
+                font-weight: $font-medium;
+                display: block;
+            }
+            .name{
+                font-size: 24px;
+                line-height: 28px;
+                color: $clr-base;
+                font-weight: $font-medium;
+                display: block;                                                                                                                 
+            }
+            .info-wrap {
+                .info {
+                    display: block;
+                    margin-bottom: 5px;
+                    line-height: 20px;
+                }
+            }
+            .highlight {
+                font-weight: $font-medium;
+                color: $clr-base;
+            }
+        }
+    }
+    .bs-card {
+        float: right;
+        margin-right: 30px;
+        height: auto;
+        .heading {
+            font-size: 14px;
+            line-height: 16px;
+            color: $clr-base;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 10px;
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0px;
+                bottom: 0;
+                width: 20px;
+                height: 2px;
+                background: #58595b;
+            }
+        }
+        .form-wrap {
+            margin-top: 10px;
+            display: block;
+            .js-scroll-wrap{
+                display: block;
+                height: 340px;
+                overflow: hidden;
+                padding-right: 10px;
+            }
+            .select2-container{
+                width: 100% !important;
+            }
+            .select2-container--default .select2-selection--single .select2-selection__rendered{
+                width: 100%;
+                border: none;
+                border-bottom:1px solid #eeeeee;
+                text-align: left;
+                color: #c3c3c3;
+                font-size: 13px;
+                padding-left: 0px;
+            }
+            .select2-container--default .select2-selection--single .select2-selection__arrow b:before{
+                color: #c3c3c3;
+            }
+            .con-loc-wrap{
+                display: block;
+                .desc{
+                    display: inline-block;
+                    p{
+                        font-size: 13px;
+                        color: #c3c3c3;
+                    }
+                }
+                .loc-icon{
+                    display: inline-block;
+                    width: 34px;
+                    height: 34px;
+                    margin-left:10px;
+                    cursor: pointer;
+                    background: url('../img/icon/con-loc.png') no-repeat left top 7px;
+                }
+            }
+            .btn {
+                &.resend {
+                    display: block;
+                    margin: 20px auto 0;
+                }
+            }
+        }
+    }
+    &.typ-faq {
+        display: block;
+        position: relative;
+        height: auto;
+        .detail {
+            width: 30%;
+        }
+        .tabs {
+            border: none;
+            padding-bottom: 125px;
+            display: -ms-inline-grid;
+            display: inline-grid;
+            li {
+                text-transform: capitalize;
+                font-size: 16px;
+                line-height: 18px;
+                padding-bottom: 10px;
+                margin-bottom: 25px;
+                display:block;
+                padding-right: 30px;
+                a {
+                    color: #58595b;
+                }
+                .icon {
+                    display: none;
+                    position: absolute;
+                    bottom: 6px;
+                    left: 172px;
+                    color: #034ea2;
+                }
+                &.active {
+                    position: relative;
+                    a {
+                        color: #034ea2;
+                        font-weight: 700;
+                    }
+                    &:before{
+                        content: "\66";
+                        position: absolute;
+                        top: 3px;
+                        right: 0;
+                        font-size: 15px;
+                        color: #034ea2;
+                        font-family: "rhf" !important;
+                        font-style: normal !important;
+                        font-weight: normal !important;
+                        font-variant: normal !important;
+                        text-transform: none !important;
+                        speak: none;
+                        line-height: 1;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                    }
+                    &:after {
+                        content: '';
+                        
+                        height: 1px;
+                        background: #d9dbde;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0;
+                        right: 0;
+                    }
+                    .icon {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .faq-tabs {
+            .tab-content {
+                position: absolute;
+                top: 0;
+                width: 70%;
+                right: 0px;
+                
+                padding-left: 10px;
+                
+                padding-top: 0px;
+                
+            }
+            .tab-pane{
+                height: 550px;
+                overflow: hidden;
+                .panel-group {
+                    margin-bottom: 20px;
+                    .panel {
+                        background: transparent;
+                        box-shadow: none;
+                        border: 0px;
+                        .panel-heading {
+                            color: #58595b;
+                            background: transparent;
+                            border: 0px;
+                            padding: 0px;
+                            .panel-title {
+                                .collapsed {
+                                    display: block;
+                                    border-bottom: 1px solid #ddd;
+                                    &:after{
+                                        content: "\6a";
+                                    }
+                                }
+                                a {
+                                    border: 0px;
+                                    padding: 20px 20px 20px 0;
+                                    display: block;
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                    font-weight: $font-bold;
+                                    position: relative;
+                                    &:after{
+                                        content: "\6b";
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        right: 0;
+                                        color: $clr-base;
+                                        font-size: 20px;
+                                        font-weight: $font-light;
+                                        font-family: "rhf" !important;
+                                        font-style: normal !important;
+                                        font-weight: normal !important;
+                                        font-variant: normal !important;
+                                        text-transform: none !important;
+                                        speak: none;
+                                        line-height: 1;
+                                        -webkit-font-smoothing: antialiased;
+                                        -moz-osx-font-smoothing: grayscale;
+                                    }
+
+                                }
+                            }
+                        }
+                        .panel-collapse {
+                            border-bottom: 0px;
+                            padding: 0 0 15px 0px;
+                            
+                                .panel-body {
+                                    padding: 0 20px 15px 0;
+                                    border-bottom: 1px solid #ddd;
+                                    border-top: 0px;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    font-weight: $font-light;
+                                }
+                            
+                        }
+                    }
+                }
+            }
+            
+        }
+        .tab-content {
+            position: relative;
+        }
+    }
+}

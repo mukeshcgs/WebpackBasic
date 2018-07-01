@@ -1,0 +1,288 @@
+        #close-journey {
+            .modal-header {
+                text-align: center;
+                .modal-title {
+                    font-weight: $font-bold;
+                    font-size: 18px;
+                    color: $clr-default;
+                }
+            }
+            .modal-body {
+                text-align: center;
+                .que {
+                    font-size: 24px;
+                    font-weight: $font-light;
+                    margin-bottom: 15px;
+                }
+                .final-wrap {
+                    margin-top: 25px;
+                    .final-msg {
+                        width: 50%;
+                        //background: url('../img/icon/mail.png') no-repeat bottom 5px left;
+                        .form-group {
+                            width: 100%;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .form-group {
+                    width: 100%;
+                }
+                .input-group {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        #cash-flow {
+            .modal-dialog {
+                width: 800px;
+                height: 80vh;
+                .modal-content {
+                    height: 100%;
+                    .modal-header {
+                        position: relative;
+                        .header-wrap {
+                            display: block;
+                            .modal-title {
+                                font-weight: $font-medium;
+                                font-size: 30px;
+                                color: $clr-default;
+                                display: inline-block;
+                                text-transform: uppercase;
+                            }
+                            .mod-filter {
+                                display: inline-block;
+                                float: right;
+                                margin-top: 10px;
+                                .filter-title {
+                                    display: inline;
+                                    float: left;
+                                    line-height: 28px;
+                                    padding: 0 5px;
+                                    font-size: 14px;
+                                }
+                                .bs-select {
+                                    display: inline;
+                                    float: left;
+                                    padding: 0 5px;
+                                    font-size: 14px;
+                                    .select2-container--default .select2-selection--single .select2-selection__arrow b:before {
+                                        color: $clr-base-sec;
+                                    }
+                                }
+                                .tabs-wrap {
+                                    display: inline-block;
+                                    border: 1px solid #eeeeee;
+                                    border-radius: 7px;
+                                    overflow: hidden;
+                                    margin-left: 50px;
+                                    .tab {
+                                        width: 43px;
+                                        height: 34px;
+                                        float: left;
+                                        background: $clr-root;
+                                        text-align: center;
+                                        position: relative;
+                                        cursor: pointer;
+                                        .cm-icon {
+                                            width: 22px;
+                                            height: 22px;
+                                            position: absolute;
+                                            top: 26%;
+                                            left: 0;
+                                            right: 0;
+                                            margin: 0 auto;
+                                            font-size: 18px;
+                                            color: #eeeeee;
+                                        }
+                                        &:first-child {
+                                            border-right: 1px solid #eeeeee;
+                                        }
+                                        &:hover {
+                                            background: $clr-primary;
+                                            .cm-icon {
+                                                color: $clr-root;
+                                            }
+                                        }
+                                        &.active {
+                                            background: $clr-primary;
+                                            .cm-icon {
+                                                color: $clr-root;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .close {
+                            position: absolute;
+                            right: -20px;
+                            top: 0;
+                            margin-top: -8px;
+                            font-size: 34px;
+                            color: $clr-root;
+                            font-weight: $font-light;
+                            text-shadow: none;
+                            opacity: 1;
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .modal-body {
+                        height: 100%;
+                        padding: 0;
+                        .cash-graph-wrap {
+                            display: block;
+                            .highcharts-yaxis-grid {
+                                opacity: 0;
+                            }
+                            .highcharts-yaxis-labels {
+                                opacity: 0;
+                            }
+                        }
+                        .cash-table-wrap {
+                            display: none;
+                            overflow: hidden;
+                            height: 80%;
+                            table {
+                                border-collapse: collapse;
+                                width: 100%;
+                            }
+                            th {
+                                color: $clr-default;
+                            }
+                            td,
+                            th {
+                                border: none;
+                                padding: 15px;
+                                font-size: 12px;
+                                font-weight: $font-medium;
+                                text-align: center;
+                            }
+                            tr:nth-child(even) {
+                                background-color: #f7f7f7;
+                            }
+                            &.mCustomScrollbar {
+                                padding-right: 0;
+                                .mCSB_inside>.mCSB_container {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #login {
+            .modal-dialog {
+                width: 930px;
+                margin: 70px auto;
+                .modal-body {
+                    padding: 0px;
+                    .login {
+                        height: 430px;
+                        .login-gif {
+                            width: 50%;
+                            float: left;
+                            padding: 15px;
+                            border-radius: 7px;
+                            border-top-right-radius: 0px;
+                            border-bottom-right-radius: 0px;
+                            height: 430px;
+                            background: rgb(30, 87, 153);
+                            background: -moz-linear-gradient(top, rgb(30, 87, 153) 0%, rgb(41, 137, 216) 50%, rgb(125, 185, 232) 100%);
+                            background: -webkit-linear-gradient(top, rgb(30, 87, 153) 0%, rgb(41, 137, 216) 50%, rgb(125, 185, 232) 100%);
+                            background: linear-gradient(to bottom, rgb(30, 87, 153) 0%, rgb(41, 137, 216) 50%, rgb(125, 185, 232) 100%);
+                            text-align: center;
+                            .title {
+                                font-size: 24px;
+                                line-height: 38px;
+                                text-transform: uppercase;
+                                color: #ffffff;
+                                margin: 30px 0px;
+                            }
+                            .img-wrap {
+                                width: 100%;
+                                margin-top: 30px;
+                                display: block;
+                                img {
+                                    width: 100%
+                                }
+                            }
+                        }
+                        .login-form {
+                            width: 50%;
+                            display: inline-block;
+                            padding: 15px;
+                            .title {
+                                margin: 30px 0px;
+                                font-size: 20px;
+                                line-height: 22px;
+                                text-transform: uppercase;
+                                color: $clr-primary;
+                                font-weight: 500;
+                            }
+                            .form-group {
+                                .input-group {
+                                    margin: 0px;
+                                }
+                                .btn {
+                                    &.btn-default {
+                                        display: block;
+                                        margin: 20px auto 0px;
+                                    }
+                                    &.typ3 {
+                                        vertical-align: text-top;
+                                        color: #034ea2;
+                                        border-bottom: 1px solid #034ea2;
+                                        ;
+                                    }
+                                }
+                            }
+                            .cm-act-wrap {
+                                .btn {
+                                    margin-top: 0px;
+                                    text-transform: capitalize;
+                                    margin-left: 1px;
+                                    color: $clr-primary;
+                                    border: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .modal-content {
+                    border-radius: 7px;
+                    border: none;
+                    button {
+                        &.close {
+                            position: absolute;
+                            top: 0px;
+                            right: 10px;
+                            font-size: 35px;
+                            font-weight: 200;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            #close-journey {
+                .modal-body {
+                    .final-wrap {
+                        .final-msg {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            #cash-flow {
+                .modal-dialog {
+                    width: 90%;
+                }
+            }
+        }

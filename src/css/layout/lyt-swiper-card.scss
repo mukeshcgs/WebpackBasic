@@ -1,0 +1,36 @@
+//lyt-swiper-card
+.lyt-swiper-card {
+    position: absolute;
+    top: -148px;
+    width: 1170px;
+    .cm-act-wrap {
+        margin-top: 10px;
+    }
+    .bs-slider {
+        &.typ2 {
+            padding: 0px 10px;
+            .swiper-container {
+                margin: 0px 32px;
+                .swiper-slide {}
+            }
+        }
+    }
+    .icon-desc {
+        .icon {
+            width: 85px;
+            height: 85px;
+            margin: 0px auto;
+            margin-bottom: 25px;
+            display: block;
+            background: url("../img/product/icon-home-product.svg") no-repeat 0 0 transparent;
+            &:before {
+                content: none;
+            }
+        }
+        .btn.btn-default.typ2 {
+            text-align: center;
+            display: block;
+            margin-bottom: 25px;
+        }
+    }
+}

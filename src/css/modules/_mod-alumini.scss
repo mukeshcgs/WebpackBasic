@@ -1,0 +1,105 @@
+.mod-alumini {
+    .info-cont {
+        padding: 40px 35px 140px 35px;
+        position: relative;
+        .alumini-title {
+            font-size: 30px;
+            color: $clr-default;
+            font-weight: $font-bold;
+            margin-bottom: 20px;
+            .designation {
+                color: $clr-base;
+                font-size: 16px;
+                margin-bottom: 8px;
+                display: block;
+                font-weight: $font-normal;
+            }
+        }
+        .desc {
+            p {
+                color: $clr-base;
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 8px;
+                display: block;
+                font-weight: $font-light;
+            }
+        }
+        .btn {}
+        .btm-cont {
+            position: absolute;
+            left: 35px;
+            right: 35px;
+            bottom: 0;
+            .user-email {
+                float: left;
+                line-height: 26px;
+                .cm-icon {
+                    margin-right: 4px;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+            .cm-social-wrap {
+                float: right;
+                margin: 0;
+            }
+        }
+    }
+    .img-wrap {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mod-alumini {
+        .info-cont {
+            padding: 20px 15px 90px 15px;
+            .alumini-title {
+                font-size: 16px;
+                margin-bottom: 10px;
+                .designation {
+                    font-size: 12px;
+                    margin-bottom: 3px;
+                }
+            }
+            .desc {
+                p {
+                    font-size: 12px;
+                    line-height: 15px;
+                    margin-bottom: 20px;
+                }
+            }
+            .btn {
+                margin-left: 0;
+            }
+            .btm-cont {
+                left: 15px;
+                right: 15px;
+                .user-email {
+                    line-height: 26px;
+                    .cm-icon {
+                        font-size: 16px;
+                    }
+                    .email-add {
+                        display: none;
+                    }
+                }
+                .cm-social-wrap {
+                    .mod-social-media {
+                        .item {
+                            width: 18px;
+                            height: 18px;
+                            .cm-icon {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+    .bs-flyout {
+        position: fixed;
+        left: calc(100% - 350px);
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: all .32s linear;
+        z-index: -1; // opacity: 0;
+        &.active {
+            left: 0;
+            z-index: 15; // opacity: 1;
+        }
+        .lyt-alumini {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            .mod-alumini {
+                padding: 0 0 0 350px;
+                .img-wrap {
+                    right: auto;
+                    left: 0;
+                    padding: 85px 0 85px 85px;
+                    background: #58595b;
+                    width: 350px;
+                }
+                .info-cont {
+                    padding: 85px 200px 85px 45px;
+                    width: 820px;
+                    .desc {
+                        p {
+                            margin-bottom: 30px;
+                            &:last-child {
+                                margin: 0 0 8px 0;
+                            }
+                        }
+                    }
+                    .btn {
+                        &.btn-default {
+                            &.typ2 {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                    .btm-cont {
+                        left: 45px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .bs-flyout {
+            //z-index: 100;
+            left: calc(100% + 350px);
+            &.active {
+                z-index: 101;
+                left: 0;
+            }
+            .lyt-alumini {
+                margin: 0;
+                border-radius: 0;
+                .mod-alumini {
+                    padding: 0;
+                    .img-wrap {
+                        width: auto;
+                        position: static;
+                        right: auto;
+                        top: auto;
+                        height: 134px;
+                        overflow: hidden;
+                        padding: 10px 0 0 0;
+                        background: transparent;
+                    }
+                    .info-cont {
+                        padding: 20px 15px 90px 15px;
+                        width: auto;
+                        min-width: 290px;
+                        position: absolute;
+                        top: 134px;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        .desc {
+                            position: absolute;
+                            top: 60px;
+                            bottom: 100px;
+                            overflow-y: auto;
+                            left: 15px;
+                            right: 15px;
+                            p {
+                                margin-bottom: 30px;
+                                &:last-child {
+                                    margin: 0 0 8px 0;
+                                }
+                            }
+                        }
+                        .btn {
+                            &.btn-default {
+                                &.typ2 {
+                                    margin-left: 0;
+                                    position: absolute;
+                                    bottom: 80px;
+                                    left: 15px;
+                                }
+                            }
+                        }
+                        .btm-cont {
+                            left: 15px;
+                            .cm-social-wrap {
+                                position: absolute;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

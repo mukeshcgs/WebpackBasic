@@ -1,0 +1,45 @@
+//mod-icon-text
+.mod-icon-text {
+    text-align: center;
+    .icon {
+        display: block;
+        width: 65px;
+        height: 80px;
+        margin: 0px auto 20px;
+        background-size: cover;
+        &.icon-indoor {
+            background: url(../img/product/icon-indoor.svg) no-repeat -1px 18px transparent;
+            background-size: cover;
+            width: 80px;
+        }
+        &.icon-swimming {
+            background: url(../img/product/icon-swimming.svg) no-repeat -1px 9px transparent;
+            background-size: cover;
+            width: 80px;
+        }
+        &.icon-jogging {
+            background: url(../img/product/icon-jogging.svg) no-repeat 0px -1px transparent;
+            background-size: cover;
+        }
+        &.icon-gymnasium {
+            background: url(../img/product/icon-gymnasium.svg) no-repeat 0px 0 transparent;
+            background-size: cover;
+            width: 80px;
+        }
+    }
+    .text {
+        display: block;
+        font-size: 22px;
+        line-height: 24px; // margin-bottom: 5px;
+        color: $clr-base;
+        font-weight: $font-medium;
+    }
+    .sub-text {
+        display: block;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        color: $clr-base;
+        font-weight: $font-light;
+    }
+}

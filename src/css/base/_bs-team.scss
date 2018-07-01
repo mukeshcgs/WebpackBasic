@@ -1,0 +1,212 @@
+.bs-team {
+    display: block;
+    position: relative;
+    .tabs {
+        .nav-tabs {
+            display: table;
+            margin-left: 565px;
+        }
+    }
+    .tab-slider {
+        .swiper-container {
+            padding: 0;
+        }
+    }
+    .tab-pane {
+        position: relative;
+    }
+    .tab-slider-thumbs {
+        position: absolute;
+        bottom: 0;
+        height: 142px;
+        right: 0;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 10px 0;
+        .swiper-container {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 74px 0 0;
+            height: 170px;
+            box-sizing: border-box;
+            .swiper-slide {
+                width: 90px;
+                height: 95px;
+                border: none;
+                background-size: cover;
+                position: relative;
+                .name {
+                    position: absolute;
+                    top: -38px;
+                    left: 0;
+                    right: 0;
+                    color: $clr-base;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    opacity: 0
+                }
+                &.swiper-slide-active {
+                    border: 7px solid #fff;
+                    width: 122px;
+                    height: 125px;
+                    margin-top: -30px;
+                    box-shadow: 0px 0px 15px -3px;
+                    .name {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .swiper-button-next {
+            top: 55%;
+            margin-top: 0;
+            right: -27px;
+        }
+        .swiper-button-prev {
+            top: 55%;
+            margin-top: 0;
+            left: -27px;
+        }
+    }
+    .team-info-wrap {
+        display: block;
+        padding-left: 575px;
+        position: relative;
+        min-height: 500px;
+        overflow: hidden;
+        .title {
+            font-size: 18px;
+            text-transform: uppercase;
+            line-height: 16px;
+            color: $clr-default;
+            font-weight: $font-bold;
+            text-align: left;
+            margin-bottom: 20px;
+            padding-top: 30px;
+            .tag {
+                font-size: 12px;
+                font-weight: $font-medium;
+                color: $clr-base-sec;
+                padding-left: 3px;
+                margin-left: 5px;
+            }
+        }
+        .desc {
+            height: 180px;
+            overflow: hidden;
+        }
+        .img-wrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0; // width: 43%;
+            img {
+                position: relative;
+                width: 90%;
+                bottom: -22px;
+            }
+        }
+        .action-wrap {
+            display: block;
+            margin-top: 25px;
+            overflow: hidden;
+            .cm-social-wrap {
+                display: inline-block;
+                float: left;
+                margin-top: 10px;
+            }
+            .btn {
+                display: inline-block;
+                float: right;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .bs-team {
+        padding-bottom: 150px;
+        .tabs {
+            .nav-tabs {
+                display: block;
+                margin-left: 0;
+                li {
+                    a {
+                        &:last-child {
+                            padding-right: 0;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .tab-pane {
+            position: static;
+        }
+        .tab-slider-thumbs {
+            height: 85px;
+            width: 80%;
+            left: 0;
+            margin: 0 auto;
+            .swiper-container {
+                height: 123px;
+                padding: 46px 0 0;
+                .swiper-slide {
+                    width: 65px;
+                    height: 75px;
+                    .name {
+                        top: -32px;
+                        font-size: 10px;
+                    }
+                    &.swiper-slide-active {
+                        border: 8px solid #fff;
+                        width: 81px;
+                        height: 97px;
+                        margin-top: -19px;
+                    }
+                }
+            }
+        }
+        .team-info-wrap {
+            padding: 190px 15px 0;
+            .title {
+                padding-top: 20px;
+                font-size: 12px;
+                line-height: 15px;
+            }
+            .desc {
+                height: 145px;
+            }
+            .action-wrap {
+                .cm-social-wrap {
+                    display: block;
+                    float: none;
+                }
+                .btn {
+                    display: block;
+                    float: none;
+                    margin-top: 20px;
+                }
+            }
+            .img-wrap {
+                bottom: auto;
+                right: 0;
+                height: 190px;
+                text-align: center;
+                border-bottom: 1px solid $clr-base-sec;
+                img {
+                    height: 100%;
+                    bottom: 0;
+                    width: auto;
+                }
+            }
+        }
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

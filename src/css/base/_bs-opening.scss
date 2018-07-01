@@ -1,0 +1,55 @@
+.bs-opening {
+    padding: 25px;
+    margin: 4px 4px 40px 4px;
+    border-radius: 5px;
+    background: $clr-root;
+    position: relative;
+    display: block;
+    @include box-shadow(0, 1px, 5px, rgba(0, 0, 0, 0.1));
+    .meta-title {
+        font-size: 16px;
+        color: $clr-base;
+        font-weight: $font-medium;
+    }
+    .position {
+        font-size: 20px;
+        color: $clr-default;
+        font-weight: $font-medium;
+        margin: 5px 0;
+    }
+    .location {
+        font-size: 14px;
+        color: $clr-base;
+        font-weight: $font-normal;
+    }
+    .cm-icon {
+        &.icon-next {
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            @include translate(0, -50%);
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .bs-opening {
+        padding: 15px 0;
+        border-bottom: 1px solid #e5e5e5;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+        .meta-title {
+            font-size: 12px;
+        }
+        .position {
+            font-size: 16px;
+            margin: 3px 0;
+        }
+        .cm-icon {
+            &.icon-next {
+                right: 5px;
+            }
+        }
+    }
+}

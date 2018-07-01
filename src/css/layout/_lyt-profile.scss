@@ -1,0 +1,82 @@
+.lyt-profile {
+    height: 405px;
+    margin: 0px auto;
+    padding-top: 10px;
+    .cloud9-item {
+        padding: 5px;
+        width: 488px;
+        height: 405px;
+        &.active {
+            .mod-profile {
+                .img-wrap {
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+        }
+        .mod-profile {
+            // width: 588px;
+            border-radius: 5px;
+            background: $clr-root;
+            @include box-shadow(0, 1px, 5px, rgba(0, 0, 0, 0.1));
+            .img-wrap {
+                position: relative;
+                &:after {
+                    content: '';
+                    background: rgba(104, 105, 107, .8);
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: 1;
+                }
+            }
+            .profile-info {
+                position: relative;
+                .cm-icon {
+                    background: $clr-default;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 35px;
+                    top: -23px;
+                    height: 46px;
+                    width: 46px;
+                    color: $clr-root;
+                    line-height: 46px;
+                    text-align: center;
+                    font-size: 25px;
+                    padding-top: 5px;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .lyt-profile {
+        width: 100%;
+        height: 200px;
+        padding: 0px 20px;
+        .cloud9-item {
+            width: 70%;
+            height: 200px;
+            padding: 0;
+        }
+        .mod-profile {
+            .profile-info {
+                .cm-icon {
+                    left: 20px;
+                    top: -12px;
+                    height: 25px;
+                    width: 25px;
+                    line-height: 25px;
+                    font-size: 12px;
+                    padding-top: 3px;
+                }
+            }
+        }
+    }
+}

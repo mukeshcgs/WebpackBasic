@@ -1,0 +1,126 @@
+.mod-icon-desc {
+    text-align: center;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transform: scale(0.9);
+    .cm-icon {
+        font-size: 80px;
+        margin: 0 0 50px 0;
+        display: inline-block;
+    }
+    .icon-name {
+        font-size: 16px;
+        color: $clr-base;
+        font-weight: $font-medium;
+        margin: 0 0 15px 0;
+    }
+    .icon-desc {
+        font-size: 14px;
+        color: $clr-base;
+        line-height: 20px;
+    }
+    .sprite-icon {
+        height: 81px;
+        width: 68px;
+        display: block;
+        margin: 0 auto 45px;
+        min-height: 80px;
+        &.coreValue1 {
+            background: url("../img/career/coreValue1.svg") no-repeat 0 0 transparent;
+        }
+        &.coreValue2 {
+            background: url("../img/career/coreValue2.svg") no-repeat 0 0 transparent;
+            height: 91px;
+            width: 79px;
+        }
+        &.coreValue3 {
+            background: url("../img/career/coreValue3.svg") no-repeat 0 0 transparent;
+            height: 93px;
+            width: 93px;
+        }
+        &.coreValue4 {
+            background: url("../img/career/coreValue4.svg") no-repeat 0 0 transparent;
+            height: 79px;
+            width: 80px;
+        }
+        &.coreValue5 {
+            background: url("../img/career/coreValue5.svg") no-repeat 0 0 transparent;
+            height: 80px;
+            width: 83px;
+        }
+        &.coreValue6 {
+            background: url("../img/career/coreValue6.svg") no-repeat 0 0 transparent;
+            height: 70px;
+            width: 56px;
+        }
+        &.latestUpdates1 {
+            background: url("../img/career/latestUpdates1.svg") no-repeat 0 0 transparent;
+            height: 67px;
+            width: 68px;
+        }
+        &.latestUpdates2 {
+            background: url("../img/career/latestUpdates2.svg") no-repeat 0 0 transparent;
+            height: 67px;
+            width: 68px;
+        }
+        &.latestUpdates3 {
+            background: url("../img/career/latestUpdates3.svg") no-repeat 0 0 transparent;
+            height: 73px;
+            width: 68px;
+        }
+    }
+    &:hover {
+        @include scale(1);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mod-icon-desc {
+        .cm-icon {
+            font-size: 50px;
+            margin: 0 0 12px 0;
+        }
+        .icon-name {
+            font-size: 14px;
+            margin: 0;
+        }
+        .icon-desc {
+            display: none;
+        }
+        .sprite-icon {
+            height: 58px;
+            width: 49px;
+            margin: 0 auto 25px;
+            min-height: 60px;
+            &.coreValue1 {
+                background: url("../img/career/coreValueMob1.svg") no-repeat 0 0 transparent;
+            }
+            &.coreValue2 {
+                background: url("../img/career/coreValueMob2.svg") no-repeat 0 0 transparent;
+                height: 57px;
+                width: 49px;
+            }
+            &.coreValue3 {
+                background: url("../img/career/coreValueMob3.svg") no-repeat 0 0 transparent;
+                height: 57px;
+                width: 57px;
+            }
+            &.coreValue4 {
+                background: url("../img/career/coreValueMob4.svg") no-repeat 0 0 transparent;
+                height: 57px;
+                width: 58px;
+            }
+            &.coreValue5 {
+                background: url("../img/career/coreValueMob5.svg") no-repeat 0 0 transparent;
+                height: 47px;
+                width: 48px;
+            }
+            &.coreValue6 {
+                background: url("../img/career/coreValueMob6.svg") no-repeat 0 0 transparent;
+                height: 48px;
+                width: 39px;
+            }
+        }
+    }
+}

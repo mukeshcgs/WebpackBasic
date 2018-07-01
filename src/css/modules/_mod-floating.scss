@@ -1,0 +1,66 @@
+//mod-floating
+.mod-floating {
+    text-align: center;
+    margin: 5px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 25px;
+    box-sizing: border-box;
+    .cal-info {
+        text-align: center;
+        margin-bottom: 10px;
+        display: block;
+        .num {
+            display: block;
+            color: $clr-default;
+            font-size: 32px;
+            line-height: 34px;
+            font-weight: $font-medium;
+            margin-bottom: 5px;
+        }
+        .sub {
+            display: block;
+            color: $clr-default;
+            font-size: 15px;
+            line-height: 17px;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+        .num-info {
+            display: block;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+    .list {
+        border-bottom: 1px solid $clr-sec-alternate;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .list-item {
+        width: 40%;
+        padding: 0px 10px;
+        position: relative;
+        &:last-child {
+            width: 30%;
+            &:after {
+                content: none;
+            }
+        }
+        &:first-child {
+            width: 30%;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 80px;
+            background: $clr-sec-alternate;
+            top: 0;
+            right: 0;
+        }
+    }
+    .desc {
+        margin-bottom: 20px;
+    }
+}

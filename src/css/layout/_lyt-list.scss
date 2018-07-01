@@ -1,0 +1,39 @@
+/* lyt-list */
+
+.lyt-list {
+    text-align: center;
+    margin-left: -24px;
+    margin-right: -24px;
+    padding: 30px 0;
+    .item {
+        display: inline-block;
+        padding: 0 24px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .lyt-list {
+        &.animate {
+            padding: 60px 0 30px;
+            .item {
+                position: relative;
+                .bs-icon-text {
+                    -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(rgba(255, 255, 255, .5)));
+                    -webkit-transition: all 0.3s;
+                    -webkit-transform-origin: 50% 100%;
+                }
+                &:hover {
+                    .bs-icon-text {
+                        -webkit-transform: scale(1.4);
+                        margin: 0 1em;
+                    }
+                }
+            }
+            .item .bs-icon-text:hover+.item .bs-icon-text,
+            .item.prev .bs-icon-text {
+                -webkit-transform: scale(0.5);
+                margin: 0 1.5em;
+            }
+        }
+    }
+}

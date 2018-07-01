@@ -1,0 +1,36 @@
+// mod-search
+.mod-search {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 45px;
+    .img-wrap {
+        float: left;
+        margin-right: 80px;
+    }
+    .search-info {
+        padding: 15px 0px 0px;
+        .title {
+            font-size: 24px;
+            line-height: 26px;
+            font-weight: $font-medium;
+            margin-bottom: 25px;
+        }
+        .desc {
+            padding-right: 50px;
+            font-size: 18px;
+            line-height: 22px;
+            display: -webkit-box;
+            max-height: 80px;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-weight: $font-light;
+        }
+        .btn {
+            &.resend {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+    }
+}

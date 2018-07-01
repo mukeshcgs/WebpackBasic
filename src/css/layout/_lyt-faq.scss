@@ -1,0 +1,70 @@
+//lyt-faq
+.lyt-faq {
+    &.lyt-contact-type {
+        &.typ-faq {
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            .detail {
+                width: 40%;
+                float: left;
+                .faq-tabs {
+                    height: auto;
+                    display: block;
+                    margin-bottom: 40px;
+                }
+            }
+            .tabs {
+                margin-bottom: 10px;
+                border: none;
+                padding-bottom: 125px;
+                display: inline-block;
+                li {
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    line-height: 18px;
+                    padding-bottom: 10px;
+                    margin-bottom: 25px;
+                    display: block;
+                    padding-right: 30px;
+                    a {
+                        color: #58595b;
+                    }
+                    .icon {
+                        display: none;
+                        position: absolute;
+                        bottom: 6px;
+                        left: 172px;
+                        color: #034ea2;
+                    }
+                    .active {
+                        position: relative;
+                         :before {
+                            content: "\66";
+                            position: absolute;
+                            top: 3px;
+                            right: 0;
+                            font-size: 15px;
+                            color: #034ea2;
+                            line-height: 1;
+                            -webkit-font-smoothing: antialiased;
+                        }
+                        a {
+                            color: #034ea2;
+                            font-weight: 700;
+                        }
+                        .icon {
+                            display: block;
+                        }
+                         :after {}
+                    }
+                }
+            }
+            .faq-tabs {
+                .tab-pane {
+                    height: auto;
+                }
+            }
+        }
+    }
+}
