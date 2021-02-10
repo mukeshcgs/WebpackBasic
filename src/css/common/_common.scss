@@ -22,12 +22,14 @@
 
 .cm-no-banner {
     position: relative;
+
     .bs-header {
         .user-nav {
             .list {
                 .item {
                     .nav-link {
                         color: $clr-primary;
+
                         .cm-icon {
                             color: $clr-primary;
                         }
@@ -43,6 +45,7 @@
         .main {
             display: block !important;
         }
+
         .inner {
             display: none !important;
         }
@@ -54,6 +57,7 @@
         .m-main {
             display: none !important;
         }
+
         .m-inner {
             display: none !important;
         }
@@ -80,6 +84,7 @@
     height: 155px;
     background: $clr-root;
     position: relative;
+
     .leftside {
         width: 127px;
         display: table-cell;
@@ -87,6 +92,7 @@
         position: relative;
         text-align: center;
         padding-right: 20px;
+
         .cm-icon {
             position: absolute;
             z-index: 2;
@@ -96,6 +102,7 @@
             font-size: 40px;
             color: #fff;
         }
+
         &:before {
             content: '';
             position: absolute;
@@ -109,11 +116,13 @@
             z-index: 0;
         }
     }
+
     .rightside {
         width: 280px;
         background: $clr-root;
         display: table-cell;
         vertical-align: middle;
+
         .desc {
             p {
                 b {
@@ -128,6 +137,7 @@
     display: block;
     overflow: hidden;
     margin-top: 30px;
+
     .meta-text {
         display: inline-block;
         text-transform: uppercase;
@@ -137,16 +147,20 @@
         margin-right: 10px;
         margin-top: 7px;
     }
+
     .mod-social-media {
         float: left;
+
         .item {
             width: 26px;
             height: 26px;
             background: $clr-base;
+
             .cm-icon {
                 transform: translateY(-46%) translateX(-53%);
                 font-size: 12px;
             }
+
             &:hover {
                 background: $clr-root;
                 border: 1px solid $clr-base;
@@ -225,6 +239,7 @@
     -webkit-transition: opacity .15s linear;
     -o-transition: opacity .15s linear;
     transition: opacity .15s linear;
+
     &.popup-active {
         display: block;
     }
@@ -236,16 +251,19 @@
             .main {
                 display: none !important;
             }
+
             .inner {
                 display: none !important;
             }
         }
     }
+
     .cm-main {
         .bs-header {
             .m-main {
                 display: block !important;
             }
+
             .m-inner {
                 display: none !important;
             }

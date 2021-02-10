@@ -3,7 +3,7 @@
   @Project : Project Name
   @Dev : Mukesh
   @Date :6th Jan 18;
-*/ 
+*/
 
 
 /* config */
@@ -17,21 +17,25 @@
 @import "element/elements";
 @import "common/common";
 
+/* bootstrap */
+@import "bootstrap";
+
+
 /* bootstrap-extend */
 
- @import "bootstrap-extend/btn";
- @import "bootstrap-extend/tab";
- @import "bootstrap-extend/form";
- @import "bootstrap-extend/modal";
- @import "bootstrap-extend/range";
+@import "bootstrap-extend/btn";
+@import "bootstrap-extend/tab";
+@import "bootstrap-extend/form";
+@import "bootstrap-extend/modal";
+@import "bootstrap-extend/range";
 
 /* lib-extend */
 
- @import "lib-extend/swiper";
- @import "lib-extend/map";
- @import "lib-extend/select2";
- @import "lib-extend/autocomplete";
- @import "lib-extend/rangeSlider";
+@import "lib-extend/swiper";
+@import "lib-extend/map";
+@import "lib-extend/select2";
+@import "lib-extend/autocomplete";
+@import "lib-extend/rangeSlider";
 
 /* base */
 
