@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.2",
+    "webpack-dev-server": "^3.1.11",
     "webpack-merge": "^4.1.1",
     "webpack-visualizer-plugin": "^0.1.11",
     "cross-env": "^5.2.0",
